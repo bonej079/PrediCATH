@@ -1,0 +1,122 @@
+# Common environment file
+# Change the value below to change the CATH version
+
+CATH_VERSION_UOM-1A26=CATH43
+PFAM_VERSION_UOM-1A26=PFAM27
+
+mode=PROD
+
+# ===========================================================================================
+# UOM1A26 Paths
+# ===========================================================================================
+
+# Added for BLAST
+BLASTDB_UOM-1A26=/mnt/DataDrive/Data/BLAST/swissprot
+
+# GENOME_SCAN_PATH_UOM-1A26=/media/jbon4/4CC40CD3C40CC0E6/Data/CATH/cath-tools-genomescan/apps
+GENOME_SCAN_PATH_UOM-1A26=/mnt/ramdisk/cath-tools-genomescan/apps
+
+CATH_RESOLVE_HITS_UOM-1A26=/mnt/ramdisk/cath-tools-genomescan/bin/cath-resolve-hits
+
+# JB PHD Data Folder
+# JBPHD_DATA_UOM-1A26=/media/jbon4/4CC40CD3C40CC0E6/Data
+JBPHD_DATA_UOM-1A26=/mnt/DataDrive/Data
+
+# Funfhmmer v 4.2
+# CATH_RESOLVE_HITS_PATH_UOM-1A26=/home/jbon4/CATHv4_2/gene3d/gene3d_hmmsearch/cath-resolve-hits
+
+# Analysis Path
+# ANALYSIS_PATH_UOM-1A26=/mnt/DataDrive/predictions/tmp/predictions/cafa2-eval
+
+DOMAIN_UOM-1A26=bacteria
+ANALYSIS_PATH_UOM-1A26=/mnt/DataDrive/predictions/tmp/predictions/breast-cancer/predictions/CATH43_IndexMethods+dcgo_t0_1
+# /mnt/DataDrive/predictions/tmp/predictions/20191023121534
+
+#DOMAIN_UOM-1A26=archaea
+#ANALYSIS_PATH_UOM-1A26=/mnt/DataDrive/predictions/tmp/predictions/20190907114909 - MetaPredictor Archaea
+
+#DOMAIN_UOM-1A26=eukarya
+#ANALYSIS_PATH_UOM-1A26=/mnt/DataDrive/predictions/tmp/predictions/20190918205126 - Metapredictor Eukarya
+
+# Prediction Paths
+
+#PREDICTION_PATH_UOM-1A26=CAFA/Targets/CAFA2/CAFA Data/CAFA-2013-targets/eukarya
+# PREDICTION_PATH_UOM-1A26=CAFA/Targets/CAFA2/CAFA Data/CAFA-2013-targets/bacteria
+# PREDICTION_PATH_UOM-1A26=CAFA/Targets/CAFA2/CAFA Data/CAFA-2013-targets/archaea
+#CAFA 3
+PREDICTION_PATH_UOM-1A26=CAFA3/TargetFiles
+# SARS-COV-2
+# PREDICTION_PATH_UOM-1A26=/mnt/DataDrive/predictions/tmp/SARS-CoV-2/fasta
+# /mnt/DataDrive/predictions/tmp/breast-cancer/fasta
+# CAFA 4
+# PREDICTION_PATH_UOM-1A26=CAFA4/CAFA4-export/TargetFiles
+
+# PREDICTION_SAVE_PATH_UOM-1A26=/mnt/DataDrive/predictions/tmp/predictions/sars-cov-2
+PREDICTION_SAVE_PATH_UOM-1A26=/mnt/DataDrive/predictions/tmp/predictions/CAFA3
+# /mnt/DataDrive/predictions/tmp
+
+# ===========================================================================================
+# UOM Paths
+# ===========================================================================================
+
+# Added for BLAST
+BLASTDB_UOM=/media/jbon4/5AC366E51712775C/Data/BLASTDB
+
+GENOME_SCAN_PATH_UOM=/mnt/ramdisk/cath-tools-genomescan/apps
+CATH_RESOLVE_HITS_UOM=/mnt/ramdisk/cath-tools-genomescan/bin/cath-resolve-hits
+
+# JB PHD Data Folder
+JBPHD_DATA_UOM=/mnt/Data/Data
+
+# Funfhmmer v 4.2
+CATH_RESOLVE_HITS_PATH_UOM=/mnt/ramdisk/cath-tools-genomescan/bin/cath-resolve-hits
+
+# Analysis Path
+# /home/jbon4/Cloud Services/Dropbox/university - personal/PhD Bioinformatics/Predictions_CATH-05Months/predictions/CAFA 2 Eukarya/20180510172712
+# /home/jbon4/predictions/cafa2-bacteria
+ANALYSIS_PATH_UOM=/media/jbon4/0CC416420CC41642/Cloud Services/Dropbox/university - personal/PhD Bioinformatics/Analysis/Take 3
+
+# Prediction Paths
+
+PREDICTION_PATH_UOM=CAFA3/TargetFiles
+# PREDICTION_PATH_UOM=CAFA/Targets/CAFA2/CAFA Data/CAFA-2013-targets/archaea
+# PREDICTION_PATH_UOM=CAFA/Targets/CAFA2/CAFA Data/CAFA-2013-targets/eukarya
+PREDICTION_SAVE_PATH_UOM=/media/jbon4/0CC416420CC41642/predictions/tmp
+
+# ===========================================================================================
+# General Settings
+# ===========================================================================================
+
+# Graph Database Settings
+GRAPH_IP=uom-cis, uom-1a26
+GRAPH_USER=neo4j
+GRAPH_PASSWORD=neo4j-password
+
+# MySQL Database Settings
+
+MYSQL_USER=phduser
+MYSQL_PASSWORD=phdPassword
+
+# MySQL CACHE Database Settings
+
+MYSQL_USER_CACHE=phduser
+MYSQL_PASSWORD_CACHE=phdPassword
+MYSQL_HOST_CACHE=uom-1a26
+MYSQL_PORT_CACHE=3306
+
+# Prediction Threads
+
+# *** Uncomment this for threading
+THREAD_MODEL=threading
+# Uncomment for production
+# NUM_THREADS=50
+# Use when CACHE only option is used.
+NUM_THREADS=200
+# Uncomment for testing
+# NUM_THREADS=1
+
+TERM=xterm-256color
+
+PREDICTION_NAMING_SCHEME=CAFA3 ## USE CAFA2 FOR EARLIER SCHEMES, otherwise use CAFA3
+CAFA_EDITION=3
+CAFA_TEAM_NAME=BonelloFunFam
